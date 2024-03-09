@@ -22,17 +22,19 @@ function sendEmail() {
         document.getElementById("contactForm").style.display = "none";
         document.getElementById("successMessage").style.display = "block";
 
-        setTimeout(returnHome, 5000); // Return to homepage after 5 seconds
+        // setTimeout(returnHome, 9000); // Return to homepage after 9 seconds
     } else {
         document.getElementById("errorMessage").style.display = "block";
     }
 }
 
 function returnHome() {
-    window.location.href = "landing.html";
+    window.location.href = "landingPage.html";
 }
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
     sendEmail();
+    event.preventDefault();
 });
+
+
