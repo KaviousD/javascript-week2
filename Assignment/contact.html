@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header>
+        <h1>Kavo's Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="landingPage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Contact Us:</h2><br>
+
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="successMessage" style="display: none;">
+            <p>Message sent successfully!</p>
+            <button onclick="returnHome()">Return to Homepage</button>
+        </div>
+        <div id="errorMessage" style="display: none;">
+            <p>Please fill out all required fields.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kavo's Barbershop</p>
+        <p>Developed by Kavious moment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
