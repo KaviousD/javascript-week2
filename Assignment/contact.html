@@ -11,6 +11,7 @@
         <h1>Kavo's Barbershop</h1>
         <nav>
             <ul>
+                <!-- links section -->
                 <li><a href="landingPage.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -22,16 +23,22 @@
         <h2>Contact Us:</h2><br>
 
         <form id="contactForm">
+            <!-- contact form section consisting of two labels for message and email/input containers for the two followed by submit button -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
             <button type="submit">Send Message</button>
         </form>
+
+        <!-- email success div for placement after submission -->
         <div id="successMessage" style="display: none;">
             <p>Message sent successfully! Hair Appointment #1750 has been set. Please come by date issued in your reply message.</p>
             <button onclick="returnHome()">Return to Homepage</button>
+            <!-- button to reload page and be sent to home page -->
         </div>
+
+        <!-- email error message section incase the form was filled incorretly -->
         <div id="errorMessage" style="display: none;">
             <p>Please fill out all required fields.</p>
         </div>
